@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+}
+
+.navbar :where(.nav-section, .search-form, .nav-logo) {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-section {
+    gap: 1rem;
+}
+
+.navbar :where(.logo-image, .user-image) {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+} 
+
+.navbar .nav-button {
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-button:hover {
+    background-color: #f2f2f2;
+}
+
+.navbar .nav-button i {
+    font-size: 1.5rem;
+    color: #030303;
+}
+
+.navbar .nav-logo {
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.navbar .nav-logo .logo-text {
+    font-size: 1.25rem;
+    color: black;
+    letter-spacing: -1px;
+}
+
+.navbar .nav-center {
+    flex: 1;
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar .search-form {
+    flex: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.navbar .search-form .search-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+}
+
+.navbar .search-form .search-button {
+    width: 64px;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-left: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e5e5e5;
+    background-color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #606060;
+}
+
+.footer .copyright {
+    font-size: 0.75rem;
+    color: #909090;
+    margin-top: 1rem;
+}
+
